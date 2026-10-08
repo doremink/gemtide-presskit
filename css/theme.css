@@ -26,7 +26,8 @@ body {
 \* ---------------------------------------------------------- */
 
 html {
-  color: #444444;
+  color: #cccccc;
+  background: #1a1a2e;
 
   font: 62.5%/1.6 "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
@@ -37,18 +38,20 @@ body {
 
 h1,
 h2 {
+  color: #e0e0e0;
+
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
 }
 
 ::-moz-selection {
   color: white;
-  background: #3398ff;
+  background: #4a90d9;
 }
 
 ::selection {
   color: white;
-  background: #3398ff;
+  background: #4a90d9;
 }
 
 /* ---------------------------------------------------------- *\
@@ -106,6 +109,8 @@ dl {
 }
 
 dt {
+  color: #e0e0e0;
+
   font-weight: bold;
 }
 
@@ -172,13 +177,13 @@ body {
 
 a,
 a:visited {
-  color: #0077dd;
+  color: #5dade2;
 
   text-decoration: none;
 }
 
 a:hover {
-  color: #005599;
+  color: #85c1e9;
 
   text-decoration: underline;
 }
@@ -244,13 +249,13 @@ a:hover {
 
 .nav__item:hover {
   color: inherit;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
 
   text-decoration: none;
 }
 
 .nav__item:focus {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   outline: none;
 }
 
@@ -304,16 +309,16 @@ a:hover {
   margin-bottom: 15px;
   padding-bottom: 15px;
 
-  border-bottom: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid #333355;
 }
 
 .block__notice {
   margin-bottom: 15px;
   padding: 10px;
 
-  color: #027194;
-  background: #ebf7fd;
-  border: 1px solid rgba(45,112,145,0.3);
+  color: #5dade2;
+  background: #16213e;
+  border: 1px solid rgba(93, 173, 226, 0.3);
   border-radius: 4px;
 }
 
@@ -387,7 +392,7 @@ a:hover {
   height: 100%;
   padding: 20px;
 
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.45);
 
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAFFQTFRFAAAA/////////////////////////////Pz8/Pz8/Pz8/f39/f39/f39/f39/f39/f39/Pz8/Pz8/Pz8/Pz8/v7+/f39/f39/f39/f39/f395zF2nQAAABt0Uk5TAAEJCxQeIEpXYGFnc3V2d5WarK2/xNLb3N3m8ZFI2gAAAOlJREFUOMuVlckOgzAMRAdIWUrKUgK4/v8P7QWVLA64c0RPY9mxByBQ3U/LSrQuU18jKzM49uQGI2KVJY5Etkq5ZmNBWxNhheWMbOFz5cxZzaXnd8Exz6en5UvZXx98o6OjarsDtyop/Hrnixt/zm3x/AggGQCj/6UFHpLpAMBFICRTB9Qcg6JpjV4ABdMekwSmphMWGUTRBaYL1gwYma6gLBiYEvYr8HTZ9aXzzVDYjHo88sA7SgaufkJhKRI7Zgdg0K5ZtLiC3bG46lPQH5f6XPUBoI8UdUjpY08fpH9EMwAzqsL+5vfxBcKnb1vURTbUAAAAAElFTkSuQmCC");
 
@@ -463,9 +468,10 @@ a:hover {
 
   padding: 5px 10px;
 
-  background: -webkit-linear-gradient(top, white, #fafafa);
-  background:         linear-gradient(to bottom, white, #fafafa);
-  border: 1px solid #cccccc;
+  color: #cccccc;
+  background: -webkit-linear-gradient(top, #2a2a4a, #1a1a2e);
+  background:         linear-gradient(to bottom, #2a2a4a, #1a1a2e);
+  border: 1px solid #444466;
   border-radius: 5px;
 }
 
@@ -475,14 +481,14 @@ a:hover {
 }
 
 .button:focus {
-  border: 1px solid #3398ff;
+  border: 1px solid #4a90d9;
   outline: none;
 }
 
 .button:active {
   color: white;
-  background: -webkit-linear-gradient(top, #3398ff, #0077dd);
-  background:         linear-gradient(to bottom, #3398ff, #0077dd);
+  background: -webkit-linear-gradient(top, #4a90d9, #357abd);
+  background:         linear-gradient(to bottom, #4a90d9, #357abd);
 }
 
 /* ---------------------------------------------------------- *\
@@ -530,4 +536,17 @@ a:hover {
   ._team-fix-margin-top {
     margin-top: -15px;
   }
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Footer.
+\* ---------------------------------------------------------- */
+
+.page-footer {
+  color: #888888;
+}
+
+.page-footer a,
+.page-footer a:visited {
+  color: #5dade2;
 }
